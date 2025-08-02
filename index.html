@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daivakrupa Panditi | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+  <style>
+    :root {
+      --bg: #f4f4f9;
+      --text: #333;
+      --accent: #1f4037;
+      --highlight: #99f2c8;
+    }
+
+    body.dark {
+      --bg: #121212;
+      --text: #f1f1f1;
+      --accent: #99f2c8;
+      --highlight: #1f4037;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    html, body {
+      background: var(--bg);
+      color: var(--text);
+      scroll-behavior: smooth;
+      transition: background 0.3s ease, color 0.3s ease;
+    }
+
+    .toggle-theme {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      padding: 0.5rem 1rem;
+      background: var(--highlight);
+      color: var(--accent);
+      border-radius: 20px;
+      cursor: pointer;
+      font-weight: bold;
+      z-index: 999;
+    }
+
+    header {
+      text-align: center;
+      padding: 5rem 2rem 3rem;
+      background: linear-gradient(to right, var(--accent), var(--highlight));
+      color: white;
+    }
+
+    header h1 {
+      font-size: 3rem;
+    }
+
+    .typing {
+      font-size: 1.5rem;
+      margin-top: 1rem;
+      height: 2rem;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      background: var(--bg);
+      padding: 1rem;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: var(--text);
+      font-weight: 500;
+    }
+
+    nav a:hover {
+      color: var(--accent);
+    }
+
+    section {
+      padding: 4rem 2rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      color: var(--accent);
+      position: relative;
+    }
+
+    h2::after {
+      content: '';
+      position: absolute;
+      bottom: -8px;
+      left: 0;
+      width: 60px;
+      height: 3px;
+      background: var(--accent);
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    ul li {
+      background: white;
+      padding: 1rem;
+      margin-bottom: 1rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+    }
+
+    body.dark ul li {
+      background: #1e1e1e;
+    }
+
+    ul li:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    }
+
+    .btn {
+      background: var(--highlight);
+      color: var(--accent);
+      padding: 0.75rem 1.5rem;
+      text-decoration: none;
+      border-radius: 30px;
+      font-weight: bold;
+      display: inline-block;
+      margin-top: 1rem;
+    }
+
+    .contact {
+      background: var(--accent);
+      color: white;
+      text-align: center;
+      padding: 3rem 2rem;
+    }
+
+    form {
+      max-width: 500px;
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    input, textarea {
+      padding: 0.75rem;
+      border-radius: 10px;
+      border: none;
+      outline: none;
+    }
+
+    textarea {
+      min-height: 120px;
+    }
+
+    #topBtn {
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      background: var(--highlight);
+      color: var(--accent);
+      border: none;
+      padding: 0.5rem 1rem;
+      border-radius: 50px;
+      font-size: 1rem;
+      cursor: pointer;
+      display: none;
+    }
+
+    @media(max-width: 600px) {
+      nav {
+        flex-direction: column;
+        gap: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="toggle-theme" onclick="document.body.classList.toggle('dark')">Toggle Theme</div>
+
+  <header data-aos="fade-down">
+    <h1>Daivakrupa Panditi</h1>
+    <div class="typing" id="typed"></div>
+    <p>Frontend Web Developer | React.js, JavaScript, HTML5, CSS3 | Entry-Level Web Development Intern</p>
+  </header>
+
+  <nav>
+    <a href="#summary">About</a>
+    <a href="#education">Education</a>
+    <a href="#projects">Personal</a>
+    <a href="#skills">Skills</a>
+    <a href="#achievements">Achievements</a>
+    <a href="#certificates">Certificates</a>
+    <a href="#experience">Voluntary</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <main class="container">
+  <section class="section card">
+  <section id="summary" data-aos="fade-up">
+    <h2>Professional Summary</h2>
+    <p>Frontend Web Developer skilled in building responsive interfaces using HTML5, CSS3, JavaScript, and React.js. Completed virtual internships in full stack and cloud development, with hands-on experience in REST API integration, Git version control, and UI/UX best practices. Seeking entry-level web development roles to apply skills in frontend frameworks, code optimization, and modern design principles.</p>
+   </section>
+  </section>
+ 
+  <section class="section card">
+  <section id="education" data-aos="fade-up">
+    <h2>Education</h2>
+    <ul>
+      <li><strong>Bachelor of Information Technology</strong> | QIS College Of Engineering & Technology, 2022–2026 | CGPA: 7.8</li>
+      <li><strong>Higher Secondary Certificate (HSC), MPC Stream</strong> | Sri Chaitanya Jr. College, 2020–2022 | CGPA: 6.57</li>
+      <li><strong>Secondary School Certificate (SSC),</strong> | St. Xavier's High School, 2020 | CGPA: 9.87</li>
+    </ul>
+  </section>
+  </section>
+
+  <section class="section card">
+  <section id="projects" data-aos="fade-up">
+    <h2>Personal Projects</h2>
+    <ul>
+      <li><strong>Predicting Customer Churn Using Gradient Boosting & Survival Analysis</strong> | 05-2025–05-2025</li>
+      <li>Developed a customer churn prediction model using survival analysis with Python, XGBoost, and Lifelines.</li>
+      <li>Generated and interpreted Kaplan-Meier survival curves to visualize retention trends over time.</li>
+      <li>Deployed project files and documentation via GitHub Pages using Jupyter Notebook for demonstration.</li>
+      
+      <li><strong>Blog Platform UI</strong> | 07-2025–07-2025</li>
+      <li>Developed a fully responsive blog interface using HTML5, CSS3, and JavaScript, with a component-based layout for maintainability.</li>
+      <li>Optimized page performance and accessibility, achieving 95+ Lighthouse scores through clean semantic markup and reduced DOM complexity.</li>
+      <li>Ensured cross-browser compatibility and improved user experience by applying best practices in responsive UI design.</li>
+      
+      <li><strong>Responsive Product Landing Page</strong> | 06-2025–06-2025</li>
+      <li>Designed and developed a fully responsive, mobile-friendly landing page with SEO best practices using HTML5, CSS3, and Flexbox.</li>
+      <li>Integrated a live, functional contact form with input validation and seamless UI flow to enhance user interaction.</li>
+      <li>Deployed the website via GitHub Pages for public access and version control using Git.</li>
+    </ul>
+  </section>
+  </section>
+
+  <section class="section card">
+  <section id="skills" data-aos="fade-up">
+    <h2>Skills</h2>
+    <ul>
+      <li><strong>Frontend Development:</strong> HTML5,CSS3, JavaScript (ES6+), React.js, Redux, React Router, Bootstrap, Flexbox, Tailwind CSS, Responsive Design, UI/UX Design, REST APIs.</li>
+      <li><strong>Backend & Databases:</strong> Node.js, Express.js, MongoDB, MySQL, Spring Boot, Python.</li>
+      <li><strong>Tools & Platforms:</strong> Git, GitHub, GitHub Pages, Jupyter Notebook, WordPress, AWS (EC2, S3, IAM, Lambda), Postman, CI/CD, Figma</li>
+      <li><strong>Soft Skills:</strong> Problem-Solving, Team Collaboration, Communication, Adaptability, Time Management, Fast Learner.</li>
+    </ul>
+  </section>
+  </section>
+
+  <section id="achievements" data-aos="fade-up">
+    <h2>Achievements</h2>
+    <ul>
+      <li><strong>Open Source Contribution – Hacktoberfest 2023</strong> | Oct 2023</li>
+      <li>Contributed bug fixes and UI enhancements to 3+ public web repositories using Git and GitHub during the global Hacktoberfest initiative.</li>
+      
+      <li><strong>Top Performer – GitHub Web Development Bootcamp</strong> | Nov 2023 – Dec 2023</li>
+      <li>Recognized for consistently delivering responsive frontend projects using HTML5, CSS3, JavaScript, and version control via GitHub.</li>
+      
+      <li><strong>UI/UX Lead – College Coding Club</strong> | Jan 2024 – Apr 2024</li>
+      <li>Led UI/UX initiatives, mentored peers in frontend development, and improved design quality through live code reviews and accessibility testing.</li>
+    </ul>
+  </section>
+
+  <section id="certificates" data-aos="fade-up">
+    <h2>Certificates</h2>
+    <ul>
+      <li><strong>AWS Cloud Virtual Internship – Infosys Springboard</strong> Apr 2025 – Jun 2025</li>
+      <li>➤ Practiced CI/CD and DevOps automation using AWS EC2, S3, IAM, and Lambda.</li>
+      <li>➤ Gained AWS Developer Associate-level experience through hands-on projects.</li>
+      
+      <li><strong>Full Stack Java Developer Internship – Skill Dizer</strong> May 2025 – Jun 2025</li>
+      <li>➤ Developed full-stack applications with Java, Spring Boot, and MySQL.</li>
+      <li>➤ Applied MVC architecture and collaborated in Agile workflows.</li>
+      
+      <li><strong>WordPress Website Optimization – Infosys Springboard</strong> May 2025 – Jun 2025</li>
+      <li>➤ Optimized site speed, responsiveness, and SEO using caching, compression, and plugin tuning.</li>
+      
+      <li><strong>Web Development Internship – VaultOfCodes</strong> Jun 2025 – Jul 2025</li>
+      <li>➤ Built responsive SPAs using React.js and JavaScript.</li>
+      <li>➤ Enhanced UI/UX with accessibility standards and integrated REST APIs.</li>
+      
+      <li><strong>Frontend Development Track – Google / LinkedIn / Cisco</strong> | Ongoing</li>
+      <li>➤ Practicing real-world frontend development using React, HTML5, CSS3, Git, and APIs.</li>
+      <li>➤ Exploring networking fundamentals and scalable frontend systems.</li>
+    </ul>
+  </section>
+
+  <section id="experience" data-aos="fade-up">
+    <h2>Voluntary Experience</h2>
+    <ul>
+      <li><strong>Front-End Web Contributor</strong> | Open Source NGO Project | Remote | Sep 2024 – Mar 2025</li>
+      <li>Redesigned the NGO website UI using HTML5, CSS3, and JavaScript to boost user engagement.</li>
+      <li>Optimized mobile responsiveness and ensured cross-browser compatibility using modern CSS techniques.</li>
+      <li>Applied accessibility practices aligned with WCAG standards to improve usability for all users.</li>
+      <li>Collaborated via GitHub for version control, conducted code reviews, and maintained project documentation.</li>
+    </ul>
+  </section>
+
+  <section id="contact" class="contact" data-aos="fade-up">
+    <h2>Contact Me</h2>
+    <p>Email: <a href="mailto:daivakrupa515@gmail.com">daivakrupa515@gmail.com</a></p>
+    <p>Mobile: 7396948977</p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/panditi-daivakrupa-b2567b26b" target="_blank">Profile</a></p>
+    <p>Portfolio: <a href="https://daivakrupa5.github.io/Daivakrupa5.github.io-protfolio-/" target="_blank">View My Portfolio</a></p>
+    <a class="btn" href="Daivakrupa_Resume.pdf" download>Download Resume</a>
+
+    <form action="https://formspree.io/f/mzbqavjl" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" placeholder="Your Message" required></textarea>
+      <button class="btn" type="submit">Send Message</button>
+    </form>
+  </section>
+  </main>
+
+  <button id="topBtn" onclick="window.scrollTo({ top: 0, behavior: 'smooth' })">Top</button>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script>
+    AOS.init({ duration: 1200 });
+
+    new Typed("#typed", {
+      strings: ["Hi, I'm Daivakrupa!", "How are you?", "Welcome to my portfolio!"],
+      typeSpeed: 50,
+      backSpeed: 25,
+      loop: true
+    });
+
+    window.onscroll = function () {
+      const btn = document.getElementById("topBtn");
+      if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+        btn.style.display = "block";
+      } else {
+        btn.style.display = "none";
+      }
+    };
+  </script>
+</body>
+</html>
